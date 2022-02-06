@@ -1,0 +1,7 @@
+
+
+A drawback in PizzaStore class -
+    - If we want to add/remove other variety then we need to open the class for modification
+
+
+Let's encapsulate Changing part i.e creating different pizza class from preparation of pizza. See Ex2_PizzaStore

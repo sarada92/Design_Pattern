@@ -1,0 +1,9 @@
+
+Drawback of update function with all possible Attributes of the Subject is mitigated.
+Only required Attribute's get method is called to fetch the changed data
+
+But at the same time we need to make tight coupling with WeatherData.
+
+What if implementing getter and setter for Temperature, Humidity & Pressure in Subject interface?
+    As we expect more subject type implementation
+    So for few Temperature, Humidity, Pressure does not relate

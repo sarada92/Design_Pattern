@@ -1,0 +1,10 @@
+
+https://www.bestprog.net/en/2018/10/03/reusing-code-in-java-the-concept-of-composition-inheritance-delegation-the-keyword-extends-examples/#contents
+
+When to use what?
+Here are some examples when inheritance or delegation are being used:
+Assume your class is called B and the derived/delegated to class is called A then If
+
+    You want to express relationship (is-a) then you want to use Inheritance.
+    You want to be able to pass your class to an existing API expecting A’s then you need to use inheritance.
+    You want to enhance A, but A is final and can no further be sub-classed then you need to use composition and delegation

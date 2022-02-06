@@ -1,0 +1,6 @@
+
+
+A Simple Factory class is a layer where we can add/remove new Pizza class easily now.
+
+
+Now let's franchise PizzaStore in different part of U.S.

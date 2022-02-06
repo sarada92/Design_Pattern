@@ -1,0 +1,19 @@
+
+
+A simple extension to previous design.
+    - We have added two new Factory class
+            - New York
+            - Chicago
+You can now open HangOut Pizza in different states.
+Drawback:
+We are keeping the recipe same for all states.
+
+Thought:
+But, after someday people complains about the unique nature of pizza that mark NewYork on the top spot
+As we are promoting/delivering the same style of pizza in both New York and Chicago, people are not happy
+with our recipe.
+
+
+We need to be flexible in pizza preparation, baking, topping, packaging & Cutting.
+And let the local vendor to customize as per the local customer demands.
+
