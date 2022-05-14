@@ -1,21 +1,19 @@
-from C4_Factory_Pattern.Ex3_PizzaStore_SF_Franchise.Pizza.Pizzeria import Pizzeria
-from C4_Factory_Pattern.Ex3_PizzaStore_SF_Franchise.SimpleFactory.SimplePizzaFactory import SimplePizzaFactory
+from abc import abstractmethod
+from C4_Factory_Pattern.Ex4_PizzaStore_Franchise.Pizza.Pizzeria import Pizzeria
 
 
 class PizzaStore:
 
     pizza: Pizzeria
-    factory: SimplePizzaFactory
 
-    def __init__(self, factory: SimplePizzaFactory):
-        self.factory = factory
+    @abstractmethod
+    def create_pizza(self, pizza_type):
+        pass
 
     # You can order your favourite pizza from one of the pizza store
     def order_pizza(self, pizza_type: str) -> Pizzeria:
-
         # Different Pizza type class creation burden is now taken by SimplePizzaFactory Class
-        self.pizza = self.factory.create_pizza(pizza_type)
-
+        self.pizza = self.create_pizza(pizza_type)
         self.pizza.prepare_pizza()
         self.pizza.bake()
         self.pizza.cut()

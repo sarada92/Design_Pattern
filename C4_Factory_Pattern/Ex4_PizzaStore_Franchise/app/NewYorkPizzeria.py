@@ -1,12 +1,10 @@
-from C4_Factory_Pattern.Ex3_PizzaStore_SF_Franchise.PizzaStore.PizzaStore import PizzaStore
-from C4_Factory_Pattern.Ex3_PizzaStore_SF_Franchise.SimpleFactory.NYSimpleFactory import NYSimpleFactory
+from C4_Factory_Pattern.Ex4_PizzaStore_Franchise.PizzaStore.NYPizzaStore import NYPizzaStore
 
 if __name__ == '__main__':
 
-    ny_factory = NYSimpleFactory()
+    ny = NYPizzaStore()
 
     # Marry Ordered Mushroom pizza
-    ny_pizza = PizzaStore(ny_factory)
-    marry = ny_pizza.order_pizza('mushroom')
+    marry = ny.order_pizza('mushroom')
     print("Marry Ordered -", marry.description())
     

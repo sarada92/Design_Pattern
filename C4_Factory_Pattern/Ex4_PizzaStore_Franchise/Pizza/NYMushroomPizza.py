@@ -1,14 +1,14 @@
-from C4_Factory_Pattern.Ex3_PizzaStore_SF_Franchise.Pizza.Pizzeria import Pizzeria
+from C4_Factory_Pattern.Ex4_PizzaStore_Franchise.Pizza.Pizzeria import Pizzeria
 
 
-class MushroomPizza(Pizzeria):
+class NYMushroomPizza(Pizzeria):
 
     # Different Pizza type has different Dough and toppings
     def __init__(self):
         super().__init__()
-        self.name = 'Mushroom'
-        self.dough = 'Regular Crust'
-        self.sauce = 'Mushroom Pizza Sauce'
+        self.name = 'NY Mushroom'
+        self.dough = 'Thin Crust'
+        self.sauce = 'Mushroom Pizza Sauce + Salty and Spicy Tomato'
         self.toppings.append("Fresh Mozzarella")
         self.toppings.append("Parmesan")
         self.toppings.append("Mushroom Slices")
